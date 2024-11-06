@@ -1,0 +1,12 @@
+diff --git a/IO/ERF/vtkERFReader.cxx b/IO/ERF/vtkERFReader.cxx
+index 40b568a9..378dd24f 100644
+--- a/IO/ERF/vtkERFReader.cxx
++++ b/IO/ERF/vtkERFReader.cxx
+@@ -30,6 +30,7 @@
+ #include <algorithm>
+ #include <array>
+ #include <sstream>
++#include <cctype>
+ #include <vector>
+ 
+ #define H5_USE_16_API

@@ -39,6 +39,8 @@ vcpkg_from_github(
         opencascade-7.8.0.patch
         no-libharu-for-ioexport.patch
         no-libproj-for-netcdf.patch
+        # renzhi: add this patch
+        include-cctype-header.patch
 )
 
 # =============================================================================
@@ -252,8 +254,6 @@ vcpkg_check_features(OUT_FEATURE_OPTIONS FEATURE_OPTIONS
 
 # =============================================================================
 # Configure & Install
-
-
 
 # We set all libraries to "system" and explicitly list the ones that should use embedded copies
 vcpkg_cmake_configure(
